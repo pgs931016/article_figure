@@ -111,7 +111,7 @@ end
    %xlabel('y in Li_{y}MO_{2}', 'FontSize', 12, 'FontWeight','bold');%cathode
    %ylabel('NE/OCP [V]', 'FontSize', 12, 'FontWeight', 'bold');
    %title('Full-Cell', 'FontSize', 12, 'FontWeight', 'bold'); 
-   figuresettings(files(i).name(1:end-4), 1200);
+   figuresettings8(files(i).name(1:end-4), 1200);
 
 %    save_fullpath = [save_folder filesep save_name '.mat'];
 %    OCV_golden = OCV_all;
@@ -171,5 +171,5 @@ end
     % print(fig2,'-dpdf','-r1200');
 
 % save
-save_fullpath = [save_folder filesep save_name '.mat'];
+% save_fullpath = [save_folder filesep save_name '.mat'];
 % save(save_fullpath,'OCV_all')

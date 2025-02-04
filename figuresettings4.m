@@ -1,7 +1,8 @@
 function figuresettings4(filename, dpi, width, height)
 
     alw = 0.5;    
-    fsz = 6;      
+    fsz = 8;   
+    lw = 1;
 
     if nargin < 4
         height = 4; 
@@ -25,7 +26,7 @@ function figuresettings4(filename, dpi, width, height)
     fig.Position = [0, 0, width, height];
 
     subplot(1, 2, 1);
-    set(gca, 'FontSize', fsz, 'LineWidth', alw, 'FontName', 'Times New Roman');
+    set(gca, 'FontSize', fsz, 'LineWidth', alw, 'FontName', 'Times New Roman','LineWidth', lw);
     ax1 = gca;
     tight1 = ax1.TightInset;
     leftMargin1 = tight1(1);
@@ -38,14 +39,14 @@ function figuresettings4(filename, dpi, width, height)
 
 
     subplot(1, 2, 2);
-    set(gca, 'FontSize', fsz, 'LineWidth', alw, 'FontName', 'Times New Roman');
+    set(gca, 'FontSize', fsz, 'LineWidth', alw, 'FontName', 'Times New Roman','LineWidth', lw);
     ax2 = gca;
     tight2 = ax2.TightInset;
     leftMargin2 = tight2(1);
     bottomMargin2 = tight2(2);
     rightMargin2 = tight2(3);
     topMargin2 = tight2(4);
-    ax2.Position = [0.5+leftMargin2, bottomMargin2, ... 
+    ax2.Position = [0.51+leftMargin2, bottomMargin2, ... 
                     0.5 - leftMargin2 - rightMargin2 / 2, ...
                     1 - topMargin2 - bottomMargin2];
 

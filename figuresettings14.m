@@ -2,7 +2,7 @@ function figuresettings14(filename, dpi, width, height)
 
     % 기본 설정
     alw = 0.5;    
-    fsz = 6;      
+    fsz = 8;      
 
     % 입력 매개변수 기본값 처리
     if nargin < 4, height = 4; end
@@ -16,8 +16,8 @@ function figuresettings14(filename, dpi, width, height)
     fig.Position = [0, 0, width, height];
 
     % 기존 subplot 핸들 가져오기
-    axHandles = findall(fig, 'Type', 'axes'); % 모든 axes 핸들 찾기
-    nSubplots = numel(axHandles); % subplot 개수 확인
+    axHandles = findall(fig, 'Type', 'axes');
+    nSubplots = numel(axHandles);
 
     % subplot 레이아웃 계산 (1행 4열 기준)
     totalCols = 4; % 열의 개수
